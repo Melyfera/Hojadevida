@@ -1,0 +1,42 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: gray;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-template-areas:
+        "a b"
+        "c d";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.foto{
+    grid-area: a;
+    justify-self: center;
+    align-self:center; /* estos dos conceptos se pueden sustituir por place-self y se incluyen la justificación y la alineación */
+}
+
+.info{
+    grid-area: b;
+    height: 150px;
+    align-self:center;
+    justify-self:center;
+    padding:0 20px 0 20px;
+    background-color: rgb(246, 246, 246);
+}
+
+.estudios{
+    grid-area: c;
+    padding: 20px;
+    background-color: rgb(246, 246, 246);
+}
+
+.experiencia{
+    grid-area: d;
+    padding: 20px;
+    background-color: rgb(246, 246, 246);
+}
